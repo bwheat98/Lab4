@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="formChecker.js">
+         </script>
+	</head>
+
+	<body>
+<form action="customerBackend.php" method="post" onsubmit="return checkValid()">
+	Email
+	<br>
+	<input type="email" id ="email" name="user">
+	<br>
+	Password
+	<br>
+	<input type="password" id ="pwd" name = "pwd" pattern=".{1,}" required title="Please enter a password">
+
+		<section class="box">
+
+	<div class="column">
+		<h2>Toothbrush $2.00</h2>
+		<img src="https://people.eecs.ku.edu/~b445w608/eecs448-lab04/Exercise%203/toothbrush.jpeg" id="toothbrush"><br><br>Quantity:
+		<input type="number" min="0" value="0" id="tooth" name = "tooth">
+	</div>
+
+	<div class="column">
+		<h2>Pizza $8.00</h2>
+		<img src="https://people.eecs.ku.edu/~b445w608/eecs448-lab04/Exercise%203/za.jpeg" id="za"><br><br>Quantity:
+		<input type="number" min="0" value="0" id="za" name = "za">
+	</div>
+
+  <div class="column">
+		<h2>Pink Fighter Jet $20.00</h2>
+		<img src="https://people.eecs.ku.edu/~b445w608/eecs448-lab04/Exercise%203/jet.jpeg" id="jet"><br><br>Quantity:
+		<input type="number" min="0" value="0" id="jet" name = "jet">
+	</div>
+
+	</section>
+
+		<h2>Shipping</h2>
+		<input type="radio" name="ship" id = "r1" value="7 day">Free 7 day<br>
+		<input type="radio" name="ship" id = "r2" value="3 day">$5.00 3 day<br>
+		<input type="radio" name="ship" id = "r3" value="Over night">$50.00 over night<br>
+		<input type="submit" value="Submit" ><input type="reset" value="Reset">
+
+	</body>
+</html>
